@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+.bg-color {
+  background-color: aliceblue; }
+
+.navbar ul li {
+  padding: 20px; }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif; }
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding-top: 50px;
+  font-size: 300%;
+  color: black;
+  justify-content: center;
+  align-items: center; }
+
+.precio {
+  text-align: center;
+  color: red; }
+
+.btn1 {
+  display: flex;
+  background-color: #0097d3;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  padding: 10px 32px;
+  font-size: 16px; }
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.caja__login {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 40px;
+  border-radius: 10px;
+  padding: 40px; }
+  .caja__login div {
+    display: grid;
+    text-align: left;
+    margin: auto; }
+    .caja__login div h3 {
+      display: flex;
+      margin: 5px;
+      padding: 5px;
+      justify-content: center; }
+
+.footer__Color {
+  background-color: aliceblue;
+  margin-top: auto; }
+
+.nosotros__descripcion {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: aliceblue; }
+
+.nosotros__img {
+  width: 700px; }
+
+.formulario {
+  width: 500px;
+  background: aliceblue;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  color: black;
+  box-shadow: 7px 13px 37px #c7c6c6; }
+  .formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+    .formulario h4 p {
+      height: 40px;
+      text-align: center;
+      font-size: 18px; }
+
+.cuadros {
+  width: 100%;
+  background: aliceblue;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid;
+  font-size: 18px; }
+
+.btnp {
+  width: 100%;
+  background: #0088ff;
+  border: none;
+  color: white;
+  padding: 16px;
+  margin: 16px 0; }
+
+.fondo {
+  background-image: url("../img/fondo.jpg"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px 600px auto 80px;
+  grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main main main main" "footer footer footer footer"; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center; }
+
+.header {
+  grid-area: header;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
+.btn {
+  display: flex;
+  background-color: #0097d3;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 11px;
+  border-radius: 15px;
+  font-size: 16px; }
+
+.justify-content-start {
+  justify-content: start; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-end {
+  justify-content: end; }
+
+.justify-content-around {
+  justify-content: space-around; }
+
+.justify-content-evenly {
+  justify-content: space-evenly; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.btn-primario {
+  background-color: aliceblue; }
+
+.btn-secundario {
+  background-color: #0097d3; }

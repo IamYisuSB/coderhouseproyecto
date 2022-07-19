@@ -1,0 +1,25 @@
+.caja__login{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    width:600px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin:40px;
+    border-radius: 10px;
+    padding: 40px;
+    div{
+        display: grid;
+        text-align: left;
+        margin: auto;
+        h3{
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            justify-content: center;
+        }
+    }
+}
+
+

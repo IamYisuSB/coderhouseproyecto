@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import "nav" ;
+@import "target" ;
+@import "login" ;
+@import "footer" ;
+@import "nosotros" ;
+@import "variables" ;
+@import "formulario" ;
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px 600px auto 80px;
+    grid-template-areas: "navbar navbar navbar navbar"
+                        "header header header header"
+                        "main main main main"
+                        "footer footer footer footer";
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+@mixin propiedades($margen, $borde, $font) {
+    margin: $margen;
+    border-radius: $borde;
+    font-size: $font;
+}
+
+.btn {
+    display: flex;
+    background-color: map-get($btn , color );
+    border: map-get($btn , bordes );
+    color: rgb(255, 255, 255);
+    padding: map-get($btn, padding );
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    @include propiedades(11px,15px,16px )
+}
+
+@each $key , $var in $justify {
+    .justify-content-#{$key}{
+        justify-content: $var;
+    }
+}
+
+@each $key , $var in $colores {
+    .btn-#{$key}{
+        background-color: $var;
+    }
+    
+}

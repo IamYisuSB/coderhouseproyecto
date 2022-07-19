@@ -1,0 +1,31 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 50px;
+    font-size: 300%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio{
+    text-align: center;
+    color: red;
+}
+
+
+.btn1 {
+    display: flex;
+    background-color: #0097d3; 
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: white;
+    padding: 10px 32px;
+    font-size: 16px;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

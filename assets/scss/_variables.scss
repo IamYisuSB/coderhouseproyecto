@@ -1,0 +1,20 @@
+$justify:(
+    start:start,
+    center:center,
+    end:end,
+    around:space-around,
+    evenly:space-evenly,
+    between:space-between,
+);
+
+$colores:(
+    primario:aliceblue,
+    secundario:#0097d3,
+);
+
+$btn:(
+    padding:10px 35px,
+    bordes:1px solid rgba(255, 255, 255, 0), 
+    radio:5px,
+    color:#0097d3,
+);
