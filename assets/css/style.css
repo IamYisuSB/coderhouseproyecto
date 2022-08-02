@@ -70,15 +70,12 @@
   background-color: aliceblue; }
 
 .nosotros__img {
-  display: flex;
-  justify-items: left;
+  margin-top: 50px;
   width: 100%; }
 
 @media (max-width: 975px) {
   .nosotros__descripcion {
-    font-size: medium; }
-  .nosotros__img {
-    justify-content: flex-end; } }
+    font-size: medium; } }
 
 .formulario {
   width: 500px;
