@@ -64,12 +64,21 @@
 
 .nosotros__descripcion {
   text-align: center;
+  font-size: x-large;
   margin: 20px;
   padding: 20px;
   background-color: aliceblue; }
 
 .nosotros__img {
-  width: 700px; }
+  display: flex;
+  justify-items: left;
+  width: 100%; }
+
+@media (max-width: 975px) {
+  .nosotros__descripcion {
+    font-size: medium; }
+  .nosotros__img {
+    justify-content: flex-end; } }
 
 .formulario {
   width: 500px;
